@@ -1,14 +1,14 @@
 string ari(string s)
 {
 int i;
-float char = 0.000000;
+float cha = 0.000000;
 float words = 0.000000;
 float sentence = 0.000000;
 for(i = 0;s[i] != '\0'; i++)
 {
 if(isalnum(s[i]))
 {
-++char;
+++cha;
 }
 }
 for(i = 0;s[i] != '\0'; i++)
@@ -27,7 +27,7 @@ if(s[i] == ' ')
 }
 
 float result;
-result = (4.71 * char/words) + (0.5 * words/sentence) - 21.43;
+result = (4.71 * cha/words) + (0.5 * words/sentence) - 21.43;
 int x;
  string w;
  x = ceil(result);
