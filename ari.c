@@ -1,26 +1,26 @@
-char* ari(char* s)
+string ari(string st)
 {
 int i;
 float cha=0.000000;
 float words=0.000000;
 float sentence=0.000000;
-for(i=0;s[i]!='\0';i++)
+for(i=0;st[i]!='\0';i++)
 {
-if(isalnum(s[i]))
+if(isalnum(st[i]))
 {
 ++cha;
 }
 }
-for(i=0;s[i]!='\0';i++)
+for(i=0;st[i]!='\0';i++)
 {
-if(s[i]=='.' || s[i]=='?' || s[i]=='!')
+if(st[i]=='.' || st[i]=='?' || st[i]=='!')
 {
 ++sentence;
 }
 }
-for(i=0;s[i]!='\0';i++)
+for(i=0;st[i]!='\0';i++)
 {
-if(s[i]==' ')
+if(st[i]==' ')
 {
 ++words;
 }
