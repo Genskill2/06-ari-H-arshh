@@ -29,8 +29,8 @@ if(s[i] == ' ')
 float result;
 result = (4.71 * cha/words) + (0.5 * words/sentence) - 21.43;
 int x;
- string w;
- x = ceil(result);
+string w;
+x = ceil(result);
  if(x == 1)
  {
  w = "Kindergarden";
